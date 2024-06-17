@@ -1,28 +1,20 @@
-// backend/server.js
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-
-dotenv.config();
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-// Middleware
-app.use(bodyParser.json());
-app.use(cors());
-
-// Conexión a la base de datos
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Conectado a la base de datos'))
-    .catch(err => console.log(err));
-
-// Rutas
-app.use('/api', require('./routes/api'));  // Verifica esta línea
-
-app.listen(port, () => {
-    console.log(`Servidor escuchando en el puerto ${port}`);
-});
-
+{
+  "name": "elreydefrutossecos",
+  "version": "1.0.0",
+  "description": "Proyecto para El Rey de Frutos Secos",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15",
+    "dotenv": "^8.2.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
