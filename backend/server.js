@@ -1,3 +1,4 @@
+// backend/server.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -19,9 +20,8 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     .catch(err => console.log(err));
 
 // Rutas
-app.use('/api', require('./routes/api'));
+app.use('/api', require('./routes/api'));  // Verifica esta línea
 
 app.listen(port, () => {
     console.log(`Servidor escuchando en el puerto ${port}`);
 });
-
