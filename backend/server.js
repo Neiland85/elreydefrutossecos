@@ -25,3 +25,4 @@ app.use('/api', require('./routes/api'));  // Verifica esta línea
 app.listen(port, () => {
     console.log(`Servidor escuchando en el puerto ${port}`);
 });
+
