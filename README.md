@@ -100,3 +100,8 @@ elreydefrutossecos/
 │   │   ├── App.js
 │   │   └── index.js
 └── README.md
+
+## Política de Seguridad
+
+Por favor, revisa nuestra [Política de Seguridad](./SECURITY.md) para conocer cómo reportar vulnerabilidades de seguridad.
+
