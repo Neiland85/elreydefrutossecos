@@ -1,12 +1,20 @@
 {
-  "name": "frontend",
+  "name": "elreydefrutossecos-frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Frontend for El Rey de Frutos Secos",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "tailwindcss": "^2.2.19",
+    "postcss": "^8.3.9",
+    "autoprefixer": "^10.3.7"
+  }
 }
+
