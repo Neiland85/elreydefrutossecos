@@ -1,11 +1,11 @@
-// src/App.js
+// src/app.js
+
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/Header';
-import ProductList from './components/ProductList';
-import Cart from './components/Cart';
-import Footer from './components/Footer';
-import { CartProvider } from './context/CartContext';
+import ReactDOM from 'react-dom';
+
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 function App() {
   return (
