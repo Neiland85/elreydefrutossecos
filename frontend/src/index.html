@@ -8,16 +8,31 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Aquí se integra el código del thumbnail -->
+    <div class="thumbnail">
+      <img src="../assets/images/product1.jpg" alt="Product Image">
+      <div class="thumbnail-overlay">
+        <h3>Garrapiñadas</h3>
+        <p>$19.99</p>
+      </div>
+    </div>
+
+    <!-- Iframe de Figma -->
+    <div class="figma-embed">
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2Ffh7A7T4KYWueVpKqyX6Bse%2FElReyDeFrutosSecos.com%3Fnode-id%3D53-1587%26t%3Dn9MbjcRx5gV5vOub-1" allowfullscreen></iframe>
+    </div>
+  </div>
+
   <audio id="background-music" loop>
     <source src="../assets/background-music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+
   <script>
     const audio = document.getElementById('background-music');
     audio.play();
   </script>
-  <script type="module" src="./app.js"></script> <!-- Aquí se añade type="module" -->
 </body>
 </html>
 

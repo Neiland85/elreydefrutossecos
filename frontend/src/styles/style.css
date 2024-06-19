@@ -1,0 +1,46 @@
+/* src/styles/style.css */
+
+/* Estilos para el thumbnail */
+.thumbnail {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.thumbnail-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el iframe de Figma */
+.figma-embed {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.figma-embed iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
